@@ -1,0 +1,664 @@
+.main {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.centerImage {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cafe-items {
+  position: absolute;
+  width: 1500px;
+  height: 200px;
+  background-color: #f6ebda;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3rem;
+}
+
+.left {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+}
+
+.right {
+  width: 40%;
+  height: 100%;
+  background-color: #ffbd7f;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(./assets/hero-coffee-beans.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 40rem 35rem;
+}
+.nav-bar {
+  height: max-content;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logo {
+  width: 8rem;
+  height: 90%;
+  margin-left: 2.5rem;
+  border-radius: 40%;
+  margin-top: 1.2px;
+}
+
+.logo img {
+  width: 100%;
+  height: 90%;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: transparent;
+  align-items: center;
+  margin-right: 1.8rem;
+}
+.nav-options div {
+  margin: 0 1.8rem;
+  font-size: 1.6rem;
+}
+
+.nav-options div:hover {
+  color: #ffbd7f;
+  cursor: pointer;
+}
+
+.text-box {
+  width: auto;
+  height: 50%;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 10%;
+  top:20%;
+}
+
+@media (max-width: 414px){
+  .text-box{
+    top: 80%;
+    width: 100%;
+    left: 10%;
+    background-color: whitesmoke;
+  }
+  .nav-options{
+    display: none;
+  }
+  .right{
+    background-image: none;
+  }
+  .right-nav{
+    display: none;
+  }
+  .logo{
+    width: 30%;
+
+  }
+}
+.text-box button {
+  background-color: #2f2105;
+  color: white;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 10.6rem;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-icon {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #835e4c;
+}
+.order-button:hover {
+  background-color: #dd9e64;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.text-box h1 .yellow {
+  color: yellow;
+  display: inline;
+}
+
+.text-box p {
+  font-weight: 200;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+
+.text-box h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  justify-content: start;
+
+}
+
+.search-bar {
+  width: 14rem;
+  height: 2.5rem;
+  background-color: white;
+  margin-top: 1.8rem;
+  margin-left: 50px;
+  display: flex;
+  border-radius: 30px;
+}
+
+.search-bar img {
+  background-color: white;
+  width: 1.6rem;
+  height: auto;
+  font-weight: 700;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-left: 10px;
+  padding-top: 7px;
+}
+
+.search-bar input {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  flex: 1;
+  border: none;
+  padding-left: 30px;
+  outline: none;
+}
+
+.cart-icon img {
+  margin-left: 40px;
+  font-size: 1.7rem;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .cafe-items{
+    width: 100%;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 50%;
+  }
+}
+.cafe-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.elements img {
+  width: 150px;
+  height: 130px;
+  font-weight: 700;
+}
+
+.elements h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.bottom-section {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-section {
+  height: 70%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 2rem;
+  position: relative;
+}
+.right-btn {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  top: 45%;
+  right: 6.5%;
+}
+.left-btn {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  top: 45%;
+  left: 6.5%;
+  background-attachment: fixed;
+}
+
+.cafe-cards {
+  display: flex;
+  padding: 20px 30px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+.btn i {
+  font-size: 2rem;
+  color: #835e4c;
+  font-weight: 500;
+}
+
+.itemcards {
+  height: 33rem;
+  width: 20rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #835e4c;
+  padding: 20px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.itemcards:hover {
+  box-shadow: #2f2105;
+  background-color: #ffbd7f;
+  color: #3a2a0a;
+  cursor: pointer;
+  transition: all 1.5s ease;
+  transform: scale(1.1);
+}
+
+.heading {
+  width: 80%;
+  height: 70px;
+  left: 9%;
+  position: relative;
+}
+
+.heading h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.heading h2:hover {
+  cursor: pointer;
+}
+
+.itemcards .img-div {
+  width: 97%;
+  height: 40%;
+  filter: drop-shadow(1px 2px 2px black);
+}
+
+.img-div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.itemcards h3 {
+  margin-top: 20px;
+  font-size: 2.1rem;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 24px;
+  opacity: 0.7;
+  height: 30%;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.itemcards button {
+  width: 10rem;
+  height: 40px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: rgb(137, 78, 41);
+  color: white;
+  border-radius: 3rem;
+}
+
+.signup-bar {
+  width: 100%;
+  height: 200px;
+  background-color: #f6ebda;
+  display: flex;
+}
+
+.star-icon {
+  width: 15%;
+  margin-left: 40px;
+}
+
+.sign-content {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sign-content h2 {
+  margin-top: 3rem;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.star-icon img {
+  margin: 5% 44%;
+  height: 80%;
+  width: 37%;
+}
+
+.sign-content div {
+  width: 17%;
+  border: none;
+  background-color: transparent;
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+.sign-content i {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.heading-2 {
+  height: 5rem;
+  left: 8%;
+  position: relative;
+  width: 80vw;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.cafe-menu {
+  width: 90%;
+  height: max-content;
+  margin: 0 67px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu-card {
+  height: 350px;
+  width: 350px;
+  background-color: #835e4c;
+  border-radius: 2rem;
+  margin: 1rem;
+  color: white;
+}
+.menu-card:hover {
+  box-shadow: #2f2105;
+  background-color: #ffbd7f;
+  color: #2f2105;
+  cursor: pointer;
+  transition: all 0.8s ease-out;
+}
+
+.item-img img {
+  width: 90%;
+  margin: 1rem;
+}
+
+.price-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-card h2 {
+  margin: 0 0.2rem 0 0.9rem;
+}
+
+.price-btn button {
+  width: 40%;
+  height: 40px;
+  margin: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(137, 78, 41);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.price-btn h2 {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  width: 100%;
+  height: 500px;
+  background-color: #f6ebda;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.service-img {
+  width: 40%;
+  height: 80%;
+}
+
+.service-para {
+  width: 70%;
+  height: 80%;
+}
+
+.service-img img {
+  width: 70%;
+  height: 90%;
+  margin: 2rem 1rem 0rem 9rem;
+  border: 6px solid white;
+  border-radius: 7px;
+}
+
+.serv-para-txt {
+  width: 70%;
+  height: 70%;
+  margin-top: 4rem;
+}
+
+.serv-para-txt h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.serv-para-txt h2 {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.serv-para-txt p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.serv-para-txt button {
+  border: none;
+  border-radius: 20px;
+  width: 170px;
+  height: 40px;
+  margin-top: 0.9rem;
+  color: #f0bc8b;
+  background-color: #2f2105;
+  font-weight: 700;
+}
+
+footer {
+  width: 100%;
+  height: 600px;
+}
+
+footer .upper-info {
+  height: 30%;
+  width: 90%;
+  display: flex;
+  border-bottom: 1px solid#dd9e64;
+  margin-left: 6rem;
+}
+
+.cafe-name {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cafe-name img {
+  height: 50%;
+  width: 100px;
+}
+
+.sm-cover {
+  display: flex;
+  align-items: center;
+}
+
+.social-media {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sm-icons img {
+  margin-right: 1.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+.features {
+  margin-top: 8px;
+  width: 90%;
+  margin-left: 6rem;
+  height: 400px;
+  display: flex;
+}
+
+.feat-opt-box {
+  display: flex;
+  height: 100;
+  width: 50%;
+}
+
+.email-opt {
+  width: 50%;
+  height: 100%;
+}
+
+.enter-email {
+  display: flex;
+  width: 350px;
+  height: 50px;
+}
+
+ul a {
+  display: block;
+  margin: 3rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f89244;
+}
+
+.enter-email {
+  margin: 2rem;
+}
+
+.enter-email input {
+  background-color: #dd9e64;
+  border: none;
+  color: #2f2105;
+  font: 1.4rem;
+  font-weight: 500;
+  width: 250px;
+  outline: none;
+}
+
+.enter-email button {
+  width: 150px;
+  border: none;
+  background-color: #835e4c;
+  color: white;
+  font-size: bold;
+  font-size: 1.2rem;
+}
+
+.email-opt h1 {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
