@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #FFD7C4 , #9DBDFF);
 }
 
 .main-box {
