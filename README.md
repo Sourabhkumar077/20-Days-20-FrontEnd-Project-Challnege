@@ -42,7 +42,7 @@ This repository contains **20 unique and interactive frontend projects** built u
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/frontend-masterpieces.git
+git clone https://github.com/Sourabhkumar077/20-Days-20-FrontEnd-Project-Challnege.git
 ```
 
 2. Navigate to the project folder:
